@@ -1,0 +1,11 @@
+<div class="p-grid">
+    <p-card class="p-col" *ngFor="let cat of cats">
+        <ul>
+            <input [(ngModel)]='cat.name'>
+            <li>Nom : {{ cat.name }}</li>
+            <li>Couleur : {{ cat.couleur }}</li>
+            <li>Age : {{ cat.age }}</li>
+            <p-button (click)="miauler(cat)">Miaou</p-button>
+        </ul>
+    </p-card>
+</div>
